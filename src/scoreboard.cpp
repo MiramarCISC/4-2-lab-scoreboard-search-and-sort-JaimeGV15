@@ -4,9 +4,7 @@
 using namespace std;
 
 int calculateTotal(const int scores[], int size) {
-    // TODO:
-    // If the array is null or the size is invalid, return 0. ✔
-    // Otherwise, return the sum of all scores. ✔
+
     if (scores == nullptr || size <=0)
     {
     return 0;
@@ -23,9 +21,7 @@ int calculateTotal(const int scores[], int size) {
 }
 
 double calculateAverage(const int scores[], int size) {
-    // TODO:
-    // If the array is null or the size is invalid, return 0.0.✔
-    // Otherwise, return the total divided by size.✔
+
     if ( scores == nullptr || size <= 0)
     {
     return 0.0;
@@ -39,9 +35,8 @@ double calculateAverage(const int scores[], int size) {
 }
 
 int findLowest(const int scores[], int size) {
-    // TODO:
-    // If the array is null or the size is invalid, return 0. ✔ 
-    // Otherwise, return the smallest score. ✔
+
+
      if ( scores == nullptr || size <= 0)
     {
     return 0;
@@ -61,9 +56,7 @@ int findLowest(const int scores[], int size) {
 }
 
 int findHighest(const int scores[], int size) {
-    // TODO:
-    // If the array is null or the size is invalid, return 0. ✔
-    // Otherwise, return the largest score. ✔
+
      if ( scores == nullptr || size <= 0)
     {
     return 0;
@@ -84,10 +77,7 @@ int findHighest(const int scores[], int size) {
 }
 
 int findScore(const int scores[], int size, int target) {
-    // TODO:
-    // Search the array from left to right. ✔
-    // Return the index where target is found. ✔
-    // Return -1 when target is not found. ✔
+
     if ( scores == nullptr || size <= 0)
     {
       return -1;
@@ -104,9 +94,7 @@ int findScore(const int scores[], int size, int target) {
 }
 
 void sortScores(int scores[], int size) {
-    // TODO:
-    // Sort the array from lowest to highest.
-    // A selection sort works well for this lab.
+
      if ( scores == nullptr || size <= 0)
     {
      return;
@@ -148,7 +136,7 @@ void printScores(const int scores[], int size) {
 }
 
 bool isValidSize(int size) {
-    // TODO: Return true when size is greater than 0. ✔
+
     if (size > 0)
     {
         return true;
